@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // רשימת הקישורים
+        const links = [
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_1HbbkOddjGJXy7Q", // ריקול צהוב איקס וי
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_2t5osEK3sP3HAZo", // ריקול סגול איקס וי
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_2iAcrUny4Z8PGHc", // ריקול ירוק איקס וי
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_8bQXUZKBkLZ8SCG", // ריקול אדום איקס וי
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_8hMqkNfKZlnXOXs", // ריקול צהוב וי איקס
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_cFNnMSt7U4TSz0q", // ריקול ירוק וי איקס
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_2rRaFDgGn6Qa7hY", // ריקול סגול וי איקס
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_bO3PL2hakSXSKLc"  // ריקול אדום וי איקס
+        ];
+
+        // בוחר אקראית אחד מהקישורים
+        const randomLink = links[Math.floor(Math.random() * links.length)];
+
+        // מפנה את הדפדפן לקישור האקראי
+        window.location.href = randomLink;
+    </script>
+</head>
+<body>
+    <p>אם אתה לא מופנה אוטומטית, לחץ <a href="#">כאן</a>.</p>
+</body>
+</html>
