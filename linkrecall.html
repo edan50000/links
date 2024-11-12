@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        window.onload = function() {
-            // רשימת הקישורים
-            const links = [
-                "https://hujipsych.au1.qualtrics.com/jfe/form/SV_1HbbkOddjGJXy7Q", // ריקול צהוב איקס וי
-                "https://hujipsych.au1.qualtrics.com/jfe/form/SV_2t5osEK3sP3HAZo", // ריקול סגול איקס וי
-                "https://hujipsych.au1.qualtrics.com/jfe/form/SV_2iAcrUny4Z8PGHc", // ריקול ירוק איקס וי
-                "https://hujipsych.au1.qualtrics.com/jfe/form/SV_8bQXUZKBkLZ8SCG", // ריקול אדום איקס וי
-                "https://hujipsych.au1.qualtrics.com/jfe/form/SV_8hMqkNfKZlnXOXs", // ריקול צהוב וי איקס
-                "https://hujipsych.au1.qualtrics.com/jfe/form/SV_cFNnMSt7U4TSz0q", // ריקול ירוק וי איקס
-                "https://hujipsych.au1.qualtrics.com/jfe/form/SV_2rRaFDgGn6Qa7hY", // ריקול סגול וי איקס
-                "https://hujipsych.au1.qualtrics.com/jfe/form/SV_bO3PL2hakSXSKLc"  // ריקול אדום וי איקס
-            ];
+        // רשימת הקישורים
+        const links = [
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_1HbbkOddjGJXy7Q", // ריקול צהוב איקס וי
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_2t5osEK3sP3HAZo", // ריקול סגול איקס וי
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_2iAcrUny4Z8PGHc", // ריקול ירוק איקס וי
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_8bQXUZKBkLZ8SCG", // ריקול אדום איקס וי
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_8hMqkNfKZlnXOXs", // ריקול צהוב וי איקס
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_cFNnMSt7U4TSz0q", // ריקול ירוק וי איקס
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_2rRaFDgGn6Qa7hY", // ריקול סגול וי איקס
+            "https://hujipsych.au1.qualtrics.com/jfe/form/SV_bO3PL2hakSXSKLc"  // ריקול אדום וי איקס
+        ];
 
-            // בוחר אקראית אחד מהקישורים
+        // בוחר אקראית אחד מהקישורים ומפנה אליו אחרי חצי שנייה
+        setTimeout(function() {
             const randomLink = links[Math.floor(Math.random() * links.length)];
-
-            // מפנה את הדפדפן לקישור האקראי
             window.location.href = randomLink;
-        }
+        }, 500);  // הזמן שחלף לפני ההפניה (500 מילישניות)
     </script>
 </head>
 <body>
